@@ -84,7 +84,7 @@ dependencies {
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
   implementation "com.airbnb.android:lottie:5.1.1" // create ui animation
-  implementation 'com.squareup.picasso:picasso:2.71828' 
+  implementation 'com.squareup.picasso:picasso:2.8'
   implementation "androidx.core:core:$core_version"
 }
 
