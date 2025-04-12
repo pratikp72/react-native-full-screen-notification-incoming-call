@@ -74,7 +74,7 @@ In `AndroidManifest.xml`:
         android:theme="@style/incomingCall"
         android:launchMode="singleTask"
         android:excludeFromRecents="true"
-        android:exported="true"
+        android:exported="false"
         android:showWhenLocked="true"
         android:turnScreenOn="true"
         />
@@ -82,13 +82,13 @@ In `AndroidManifest.xml`:
         android:theme="@style/incomingCall"
         android:launchMode="singleTask"
         android:excludeFromRecents="true"
-        android:exported="true"
+        android:exported="false"
         android:showWhenLocked="true"
         android:turnScreenOn="true"
         />
          <service
          android:name="com.reactnativefullscreennotificationincomingcall.IncomingCallService"
-         android:enabled="true"
+         android:enabled="false"
          android:stopWithTask="false"
          android:foregroundServiceType="phoneCall"
          android:exported="true" />

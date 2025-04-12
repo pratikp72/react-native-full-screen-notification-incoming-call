@@ -46,7 +46,7 @@
         android:theme="@style/incomingCall"
         android:launchMode="singleTask"
         android:excludeFromRecents="true"
-        android:exported="true"
+        android:exported="false"
         android:showWhenLocked="true"
         android:turnScreenOn="true"
         />
@@ -54,7 +54,7 @@
         android:theme="@style/incomingCall"
         android:launchMode="singleTask"
         android:excludeFromRecents="true"
-        android:exported="true"
+        android:exported="false"
         android:showWhenLocked="true"
         android:turnScreenOn="true"
         />
@@ -63,7 +63,7 @@
          android:enabled="true"
          android:stopWithTask="false"
          android:foregroundServiceType="phoneCall"
-         android:exported="true"
+         android:exported="false"
          />
 <!--callkeep-->
       <service android:name="io.wazo.callkeep.VoiceConnectionService"
