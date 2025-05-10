@@ -105,7 +105,12 @@ Add the plugin in your app.json
 {
   "expo": {
     "plugins": [
-      ["react-native-full-screen-notification-incoming-call", { "statusBarColor": "#000000" }]
+      [
+        "react-native-full-screen-notification-incoming-call", 
+        { 
+          "statusBarColor": "#000000" 
+        }
+      ]
     ]
   }
 }
