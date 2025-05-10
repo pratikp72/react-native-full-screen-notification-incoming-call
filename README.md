@@ -111,7 +111,7 @@ Add the plugin in your app.json
 }
 ```
 
-Available plugins options : 
+Available plugin options : 
 
 ```ts
 type PluginOptions = {
