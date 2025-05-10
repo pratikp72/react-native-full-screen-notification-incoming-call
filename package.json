@@ -9,6 +9,7 @@
   "source": "src/index",
   "files": [
     "src",
+    "app.plugin.js",
     "lib",
     "android",
     "ios",
@@ -56,6 +57,7 @@
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.2",
     "@evilmartians/lefthook": "^1.5.0",
+    "@expo/config-plugins": "^9.0.0 || ^10.0.0",
     "@react-native/eslint-config": "^0.73.1",
     "@release-it/conventional-changelog": "^5.0.0",
     "@types/jest": "^29.5.5",

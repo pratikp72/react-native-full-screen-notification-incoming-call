@@ -97,6 +97,27 @@ In `AndroidManifest.xml`:
       </application>
 ```
 
+# Expo 
+
+Add the plugin in your app.json
+
+```
+{
+  "expo": {
+    "plugins": [
+      ["react-native-full-screen-notification-incoming-call", { "statusBarColor": "#000000" }]
+    ]
+  }
+}
+```
+
+Available plugins options : 
+
+```ts
+type PluginOptions = {
+  statusBarColor?: string; // optional, default is "#000000"
+};
+```
 # Usage
 
 ````js
