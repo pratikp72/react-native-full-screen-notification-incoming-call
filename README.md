@@ -88,10 +88,10 @@ In `AndroidManifest.xml`:
         />
          <service
          android:name="com.reactnativefullscreennotificationincomingcall.IncomingCallService"
-         android:enabled="false"
+         android:enabled="true"
          android:stopWithTask="false"
          android:foregroundServiceType="phoneCall"
-         android:exported="true" />
+         android:exported="false" />
 
      .....
       </application>
