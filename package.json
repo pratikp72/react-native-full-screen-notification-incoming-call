@@ -28,6 +28,7 @@
   ],
   "scripts": {
     "example": "yarn workspace react-native-full-screen-notification-incoming-call-example",
+    "expo-example": "yarn workspace expo-example",
     "test": "jest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -84,7 +85,8 @@
     "react-native": "*"
   },
   "workspaces": [
-    "example"
+    "example",
+    "expo-example"
   ],
   "packageManager": "yarn@3.6.1",
   "jest": {

@@ -2,7 +2,7 @@ import { Platform } from 'react-native';
 import RNNotificationCall, {
   type AnswerPayload,
   type DeclinePayload,
-} from '../../../src/index';
+} from 'react-native-full-screen-notification-incoming-call';
 import RNCallKeep from 'react-native-callkeep';
 import type { HandleType } from 'react-native-callkeep';
 import {
@@ -11,6 +11,7 @@ import {
   RESULTS,
   requestMultiple,
 } from 'react-native-permissions';
+import { defaultUserImgUrl } from '../constants';
 
 const appName = 'Incoming-Test';
 const isAndroid = Platform.OS === 'android';
@@ -115,7 +116,7 @@ export class CallKeepService {
           const isVideo = hasVideo === 'true';
           RNNotificationCall.displayNotification(
             callUUID,
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKet-b99huP_BtZT_HUqvsaSz32lhrcLtIDQ&s',
+            defaultUserImgUrl,
             30000,
             {
               ...answerOption,
