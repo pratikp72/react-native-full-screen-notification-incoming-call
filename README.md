@@ -26,12 +26,17 @@ Starting from Android 12, the incoming call notification UI will resemble the on
 - Full-screen incoming call notifications
 - Customizable notification options (icons, colors, sound, etc.)
 - Android 12+ call-style UI support
+- Expo support with configuration plugin
 
 # Installation
+
+For React Native projects:
 ```sh
 npm install react-native-full-screen-notification-incoming-call
 
 ```
+
+For Expo projects, this library includes a configuration plugin. See the [Expo section](#expo) below for setup instructions.
 ### Compatibility
 Ensure you are using the appropriate version of this library for your React Native version:
 
