@@ -33,10 +33,10 @@ Starting from Android 12, the incoming call notification UI will resemble the on
 For React Native projects:
 ```sh
 npm install react-native-full-screen-notification-incoming-call
-
 ```
 
-For Expo projects, this library includes a configuration plugin. See the [Expo section](#expo) below for setup instructions.
+⚠️ **Important:** This library does **NOT** support Expo Go. Expo projects require prebuild and a custom development build. See the [Expo section](#expo) below for setup instructions.
+
 ### Compatibility
 Ensure you are using the appropriate version of this library for your React Native version:
 
