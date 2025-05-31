@@ -12,6 +12,7 @@ import { useNavigation } from '@react-navigation/native';
 import { CallKeepService } from '../services/CallKeepService';
 import CheckBox from '@react-native-community/checkbox';
 import { Picker } from '@react-native-picker/picker';
+import { IncomingCallAppName, defaultUserImgUrl } from '../constants';
 
 CallKeepService.instance().setupCallKeep();
 
@@ -26,9 +27,7 @@ const IncomingCallDemo = () => {
   CallKeepService.navigation = navigation;
 
   const [callerName, setCallerName] = useState('John Doe');
-  const [callerImageURL, setCallerImageURL] = useState(
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKet-b99huP_BtZT_HUqvsaSz32lhrcLtIDQ&s'
-  );
+  const [callerImageURL, setCallerImageURL] = useState(defaultUserImgUrl);
   const [selectedRingtone, setSelectedRingtone] = useState<
     'default' | 'skype_ring'
   >('default');
@@ -47,7 +46,7 @@ const IncomingCallDemo = () => {
       hasVideo: isVideoCall,
       other: {
         ringtone: selectedRingtone !== 'default' ? selectedRingtone : null,
-        mainComponent: useCustomIncomingCallUI ? 'MyReactNativeApp' : null,
+        mainComponent: useCustomIncomingCallUI ? IncomingCallAppName : null,
         channelId:
           ringtoneChannelIds[selectedRingtone] || ringtoneChannelIds.default,
       },

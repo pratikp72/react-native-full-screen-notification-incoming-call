@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import type { CustomIncomingActivityProps } from 'react-native-full-screen-notification-incoming-call';
-import RNNotificationCall from '../../../src/index';
+import RNNotificationCall from 'react-native-full-screen-notification-incoming-call';
+import { defaultUserImgUrl } from '../constants';
 
 export default function CustomIncomingCall(props: CustomIncomingActivityProps) {
   console.log('props===', props);
@@ -14,9 +15,7 @@ export default function CustomIncomingCall(props: CustomIncomingActivityProps) {
       <Text style={styles.callerName}>{props.name || 'Unknown Caller'}</Text>
       <Image
         source={{
-          uri:
-            payload.callerImage ||
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKet-b99huP_BtZT_HUqvsaSz32lhrcLtIDQ&s',
+          uri: payload.callerImage || defaultUserImgUrl,
         }}
         style={styles.callerImage}
       />
